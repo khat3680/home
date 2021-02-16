@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/my-app/static/js/main.a31a76ce.chunk.js",
-    "main.js.map": "/my-app/static/js/main.a31a76ce.chunk.js.map",
-    "runtime-main.js": "/my-app/static/js/runtime-main.6f5ba6f9.js",
-    "runtime-main.js.map": "/my-app/static/js/runtime-main.6f5ba6f9.js.map",
-    "static/js/2.db39837d.chunk.js": "/my-app/static/js/2.db39837d.chunk.js",
-    "static/js/2.db39837d.chunk.js.map": "/my-app/static/js/2.db39837d.chunk.js.map",
-    "static/js/3.4a34e60f.chunk.js": "/my-app/static/js/3.4a34e60f.chunk.js",
-    "static/js/3.4a34e60f.chunk.js.map": "/my-app/static/js/3.4a34e60f.chunk.js.map",
+    "main.css": "/my-app/static/css/main.b466b87f.chunk.css",
+    "main.js": "/my-app/static/js/main.b0b600db.chunk.js",
+    "main.js.map": "/my-app/static/js/main.b0b600db.chunk.js.map",
+    "runtime-main.js": "/my-app/static/js/runtime-main.d77190df.js",
+    "runtime-main.js.map": "/my-app/static/js/runtime-main.d77190df.js.map",
+    "static/css/2.e88d57d2.chunk.css": "/my-app/static/css/2.e88d57d2.chunk.css",
+    "static/js/2.7640977b.chunk.js": "/my-app/static/js/2.7640977b.chunk.js",
+    "static/js/2.7640977b.chunk.js.map": "/my-app/static/js/2.7640977b.chunk.js.map",
     "index.html": "/my-app/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/my-app/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.db39837d.chunk.js.LICENSE.txt": "/my-app/static/js/2.db39837d.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/my-app/static/media/logo.6ce24c58.svg"
+    "static/css/2.e88d57d2.chunk.css.map": "/my-app/static/css/2.e88d57d2.chunk.css.map",
+    "static/css/main.b466b87f.chunk.css.map": "/my-app/static/css/main.b466b87f.chunk.css.map",
+    "static/js/2.7640977b.chunk.js.LICENSE.txt": "/my-app/static/js/2.7640977b.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "/my-app/static/media/fontawesome-webfont.f691f37e.woff",
+    "static/media/App.css": "/my-app/static/media/rain.b94ceae9.jpeg",
+    "static/media/resume_2021.c688edba.pdf": "/my-app/static/media/resume_2021.c688edba.pdf"
   },
   "entrypoints": [
-    "static/js/runtime-main.6f5ba6f9.js",
-    "static/js/2.db39837d.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.a31a76ce.chunk.js"
+    "static/js/runtime-main.d77190df.js",
+    "static/css/2.e88d57d2.chunk.css",
+    "static/js/2.7640977b.chunk.js",
+    "static/css/main.b466b87f.chunk.css",
+    "static/js/main.b0b600db.chunk.js"
   ]
 }
