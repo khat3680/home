@@ -9,7 +9,7 @@ import {
   Jumbotron,
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
-import logo from "/Users/anshulkhatri/Downloads/Resume_github/my-app/src/images/logo.png";
+import logo from "/Users/anshulkhatri/Downloads/Resume_github/portfolio/src/images/logo.png";
 
 class Header extends Component {
   constructor(props) {
