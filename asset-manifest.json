@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.b466b87f.chunk.css",
-    "main.js": "/my-app/static/js/main.20d91492.chunk.js",
-    "main.js.map": "/my-app/static/js/main.20d91492.chunk.js.map",
-    "runtime-main.js": "/my-app/static/js/runtime-main.d77190df.js",
-    "runtime-main.js.map": "/my-app/static/js/runtime-main.d77190df.js.map",
-    "static/css/2.e88d57d2.chunk.css": "/my-app/static/css/2.e88d57d2.chunk.css",
-    "static/js/2.7640977b.chunk.js": "/my-app/static/js/2.7640977b.chunk.js",
-    "static/js/2.7640977b.chunk.js.map": "/my-app/static/js/2.7640977b.chunk.js.map",
-    "index.html": "/my-app/index.html",
-    "static/css/2.e88d57d2.chunk.css.map": "/my-app/static/css/2.e88d57d2.chunk.css.map",
-    "static/css/main.b466b87f.chunk.css.map": "/my-app/static/css/main.b466b87f.chunk.css.map",
-    "static/js/2.7640977b.chunk.js.LICENSE.txt": "/my-app/static/js/2.7640977b.chunk.js.LICENSE.txt",
-    "static/media/font-awesome.min.css": "/my-app/static/media/fontawesome-webfont.f691f37e.woff",
-    "static/media/App.css": "/my-app/static/media/rain.b94ceae9.jpeg",
-    "static/media/resume_2021.c688edba.pdf": "/my-app/static/media/resume_2021.c688edba.pdf"
+    "main.css": "/home/static/css/main.0a0d7f03.chunk.css",
+    "main.js": "/home/static/js/main.9863f320.chunk.js",
+    "main.js.map": "/home/static/js/main.9863f320.chunk.js.map",
+    "runtime-main.js": "/home/static/js/runtime-main.acfc2804.js",
+    "runtime-main.js.map": "/home/static/js/runtime-main.acfc2804.js.map",
+    "static/css/2.0564a400.chunk.css": "/home/static/css/2.0564a400.chunk.css",
+    "static/js/2.7640977b.chunk.js": "/home/static/js/2.7640977b.chunk.js",
+    "static/js/2.7640977b.chunk.js.map": "/home/static/js/2.7640977b.chunk.js.map",
+    "index.html": "/home/index.html",
+    "static/css/2.0564a400.chunk.css.map": "/home/static/css/2.0564a400.chunk.css.map",
+    "static/css/main.0a0d7f03.chunk.css.map": "/home/static/css/main.0a0d7f03.chunk.css.map",
+    "static/js/2.7640977b.chunk.js.LICENSE.txt": "/home/static/js/2.7640977b.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "/home/static/media/fontawesome-webfont.f691f37e.woff",
+    "static/media/App.css": "/home/static/media/rain.b94ceae9.jpeg",
+    "static/media/resume_2021.c688edba.pdf": "/home/static/media/resume_2021.c688edba.pdf"
   },
   "entrypoints": [
-    "static/js/runtime-main.d77190df.js",
-    "static/css/2.e88d57d2.chunk.css",
+    "static/js/runtime-main.acfc2804.js",
+    "static/css/2.0564a400.chunk.css",
     "static/js/2.7640977b.chunk.js",
-    "static/css/main.b466b87f.chunk.css",
-    "static/js/main.20d91492.chunk.js"
+    "static/css/main.0a0d7f03.chunk.css",
+    "static/js/main.9863f320.chunk.js"
   ]
 }
