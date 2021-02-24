@@ -21,8 +21,6 @@ class Contact extends Component {
               width="640"
               height="1050"
               frameborder="0"
-              marginheight="0"
-              marginwidth="0"
               title="Contact Form"
             >
               Loading…
