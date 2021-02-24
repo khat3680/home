@@ -20,11 +20,7 @@ class Main extends Component {
           <CSSTransition classNames="page" timeout={300}>
             <Switch>
               <Route path="/home" component={HomePage} />
-              <Route
-                exact
-                path="/aboutus"
-                component={() => <About leaders={this.props.leaders} />}
-              />
+              <Route exact path="/aboutus" component={() => <About />} />
               <Route exact path="/contactus" component={() => <Contact />} />
               <Redirect to="/home" />
             </Switch>
