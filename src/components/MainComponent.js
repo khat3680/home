@@ -29,40 +29,9 @@ const mapStateToProps = (state) => {
 
 // makes dispatch available to the main componnent, things are dispatch.
 const mapDispatchToProps = (dispatch) => ({
-  postComment: (dishId, rating, author, comment) =>
-    dispatch(postComment(dishId, rating, author, comment)),
-  resetFeedbackForm: () => {
-    dispatch(actions.reset("feedback"));
-  },
-  fetchComments: () => {
-    dispatch(fetchComments());
-  },
-  fetchPromos: () => {
-    dispatch(fetchPromos());
-  },
   fetchLeads: () => {
     dispatch(fetchLeads());
   },
-  postFeedback: (
-    firstname,
-    lastname,
-    telnum,
-    email,
-    agree,
-    contactType,
-    message
-  ) =>
-    dispatch(
-      postFeedback(
-        firstname,
-        lastname,
-        telnum,
-        email,
-        agree,
-        contactType,
-        message
-      )
-    ),
 });
 //These four are passed as parameters to the add comment and so, that will dispatch.
 //Now, what does this do? So as you see, this function call where we're calling the action creator will return the action object for adding a comment,
@@ -71,8 +40,6 @@ const mapDispatchToProps = (dispatch) => ({
 
 class Main extends Component {
   componentDidMount() {
-    this.props.fetchComments();
-    this.props.fetchPromos();
     this.props.fetchLeads();
   }
 
@@ -96,16 +63,7 @@ class Main extends Component {
                 path="/aboutus"
                 component={() => <About leaders={this.props.leaders} />}
               />
-              <Route
-                exact
-                path="/contactus"
-                component={() => (
-                  <Contact
-                    resetFeedbackForm={this.props.resetFeedbackForm}
-                    postFeedback={this.props.postFeedback}
-                  />
-                )}
-              />
+              <Route exact path="/contactus" component={() => <Contact />} />
               <Redirect to="/home" />
             </Switch>
           </CSSTransition>

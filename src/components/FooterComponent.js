@@ -16,7 +16,7 @@ function Footer(props) {
               </li>
               <li class="list-inline-item">
                 {" "}
-                <Link to="aboutus">
+                <Link to="/aboutus">
                   <h4>About</h4>
                 </Link>
               </li>

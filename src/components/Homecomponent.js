@@ -36,10 +36,7 @@ function Home(props) {
         </div>
         <div style={{ paddingTop: 100 }}>
           <h2>Say Hello.</h2>
-          <h4>
-            Think we could make something ✨ great ✨ together? I'm looking for
-            Fall 2021 coop/internship opportunities.
-          </h4>
+          <h4>Think we could make something ✨ great ✨ together?</h4>
           <h4>
             <mark>Let's chat!</mark>
           </h4>
