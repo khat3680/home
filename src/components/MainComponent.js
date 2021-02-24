@@ -5,44 +5,10 @@ import Footer from "./FooterComponent";
 import Contact from "./ContactComponent";
 import About from "./AboutComponent";
 
-import { Switch, Route, Redirect, withRouter } from "react-router-dom";
-import { connect } from "react-redux";
-import {
-  postComment,
-  fetchComments,
-  fetchPromos,
-  fetchLeads,
-  postFeedback,
-} from "../redux/ActionCreators"; //fetchLeads
-import { actions } from "react-redux-form";
+import { Switch, Route, Redirect } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
-// makes things available to the main componnent, things are props.
-
-const mapStateToProps = (state) => {
-  return {
-    comments: state.comments,
-    leaders: state.leaders,
-    promotions: state.promotions,
-  };
-};
-
-// makes dispatch available to the main componnent, things are dispatch.
-const mapDispatchToProps = (dispatch) => ({
-  fetchLeads: () => {
-    dispatch(fetchLeads());
-  },
-});
-//These four are passed as parameters to the add comment and so, that will dispatch.
-//Now, what does this do? So as you see, this function call where we're calling the action creator will return the action object for adding a comment,
-// that action object is then given as a parameter to the dispatch function here. So the dispatch function obtains that as a parameter,
-//and that we are supplying as a function to postComment, and this can be used within our component here.
-
 class Main extends Component {
-  componentDidMount() {
-    this.props.fetchLeads();
-  }
-
   render() {
     const HomePage = () => {
       return <Home />;
@@ -51,11 +17,7 @@ class Main extends Component {
       <div>
         <Header />
         <TransitionGroup>
-          <CSSTransition
-            key={this.props.location.key}
-            classNames="page"
-            timeout={300}
-          >
+          <CSSTransition classNames="page" timeout={300}>
             <Switch>
               <Route path="/home" component={HomePage} />
               <Route
@@ -75,4 +37,4 @@ class Main extends Component {
   }
 }
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Main));
+export default Main;

@@ -8,31 +8,11 @@ import {
   Media,
 } from "reactstrap";
 import { Link } from "react-router-dom";
-import { baseUrl } from "../shared/baseUrl";
-
-function Renderleader({ leader }) {
-  return (
-    <div key={leader.id} className="col-12 mt-5">
-      <Media tag="li">
-        <Media left middle>
-          <Media object src={baseUrl + leader.image} alt={leader.name} />
-        </Media>
-        <Media body className="col-12">
-          <Media heading>{leader.name}</Media>
-          <p>{leader.designation}</p>
-          <p>{leader.description}</p>
-          <a href={leader.gitlink}> --&gt;&gt; Github Link</a>
-        </Media>
-      </Media>
-    </div>
-  );
-}
+import project1 from "../images/project1.png";
+import project2 from "../images/project2.png";
+import project3 from "../images/project3.png";
 
 function About(props) {
-  const leaders = props.leaders.leaders.map((leader) => {
-    return <Renderleader leader={leader} />;
-  });
-
   return (
     <div className="container">
       <div className="row">
@@ -40,6 +20,7 @@ function About(props) {
           <BreadcrumbItem>
             <Link to="/home">Home</Link>
           </BreadcrumbItem>
+
           <BreadcrumbItem active>About Me</BreadcrumbItem>
         </Breadcrumb>
         <div className="col-12">
@@ -52,9 +33,8 @@ function About(props) {
           <h2>Hello!!</h2>
           <p>
             I am a university student studying Computer Science, currently
-            deploying a Masks / No Mask Model on Android using react and Android
-            SDK. I currently have good experience in Python, C and javascript. I
-            am currently learning Java and its object oriented properties,
+            working on new projects. I have good experience in Python, C and
+            javascript. I am learning Java and its object oriented properties,
             Software Engineering, Microprocessors and Entrepreneur Skills.
           </p>
         </div>
@@ -97,7 +77,73 @@ function About(props) {
           <h2>Current Projects</h2>
         </div>
         <div className="col-12">
-          <Media list>{leaders}</Media>
+          <Media list>
+            <div key="1" className="col-12 mt-5">
+              <Media tag="li">
+                <Media left middle>
+                  <Media object src={project1} alt="Project Icon" />
+                </Media>
+                <Media body className="col-12">
+                  <Media heading>Ristorante ConFusion</Media>
+                  <p>ReactJs, React Native, CSS, Javascript and EXPO CLI</p>
+                  <p>
+                    Created a complete application using React Native, Redux,
+                    Redux Thunk, forms and other packages of ReactJs. Multipage
+                    application with side slide bar, reviews submission and
+                    login portals avialable in app.
+                  </p>
+                  <a href="https://github.com/khat3680/confusion">
+                    {" "}
+                    --&gt;&gt; Github Link
+                  </a>
+                </Media>
+              </Media>
+            </div>
+
+            <div key="1" className="col-12 mt-5">
+              <Media>
+                <Media left middle>
+                  <Media object src={project2} alt="Project Icon" />
+                </Media>
+                <Media body className="col-12">
+                  <Media heading>Bouyancy Stimulation</Media>
+                  <p>Javascript, CSS, HTML and Geogabra</p>
+                  <p>
+                    Created animations using Javacript and CSS objects.
+                    Demonstrating the senario of Bouyancy Stimulation by using
+                    different samples of objects and variating levels of water.
+                    Also made this project using using Geogabra
+                  </p>
+                  <a href="https://github.com/khat3680/Bouyancy-Stimulation">
+                    {" "}
+                    --&gt;&gt; Github Link
+                  </a>
+                </Media>
+              </Media>
+            </div>
+
+            <div key="1" className="col-12 mt-5">
+              <Media tag="li">
+                <Media left middle>
+                  <Media object src={project3} alt="Project Icon" />
+                </Media>
+                <Media body className="col-12">
+                  <Media heading>Instagram Bot</Media>
+                  <p>Python and Selenuim</p>
+                  <p>
+                    Created a small bot using selenuim web automating
+                    techniques, where it logs in into an user's account and
+                    shows the full list of people who don't follow you back. It
+                    was just a fun project.
+                  </p>
+                  <a href="https://github.com/khat3680/Instagram_bot">
+                    {" "}
+                    --&gt;&gt; Github Link
+                  </a>
+                </Media>
+              </Media>
+            </div>
+          </Media>
         </div>
       </div>
     </div>
