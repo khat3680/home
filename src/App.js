@@ -1,17 +1,15 @@
-import React, { Component } from 'react';
-import Main from './components/MainComponent';
-import './App.css';
-import { BrowserRouter } from 'react-router-dom';
-import { Provider } from 'react-redux';
-import { configureStore } from './redux/configureStore';
+import React, { Component } from "react";
+import Main from "./components/MainComponent";
+import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import { Provider } from "react-redux";
+import { configureStore } from "./redux/configureStore";
 
 //alert('Do you really want to see it ?');
 
 const store = configureStore();
 
-
 class App extends Component {
-
   render() {
     return (
       <Provider store={store}>
@@ -21,7 +19,6 @@ class App extends Component {
           </div>
         </BrowserRouter>
       </Provider>
-
     );
   }
 }

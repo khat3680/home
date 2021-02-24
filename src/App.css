@@ -1,3 +1,12 @@
+.body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #0578a5;
+  background-color: #c2d5f8;
+  padding-top: 10vh;
+}
+
 .row-header {
   margin: 0px auto;
   padding: 0px auto;
@@ -11,25 +20,13 @@
 }
 
 .footer {
-  background-color: #000000;
   margin: 0px auto;
   padding: 20px 0px 20px 0px;
-}
-.jumbotron {
-  padding: 70px 30px 70px 30px;
-  margin: 0px auto;
-  background-image: url("../src/images/rain.jpeg");
-  color: floralwhite;
-}
-
-address {
-  font-size: 80%;
-  margin: 0px;
-  color: #0f0f0f;
+  background-color: #c2d5f8;
 }
 
 .navbar-dark {
-  background-color: #6317dd;
+  background-color: #aac4f3;
 }
 
 .page-enter {
@@ -52,4 +49,23 @@ address {
   opacity: 0.01;
   transform: translateX(100%);
   transition: all 300 ms ease-out;
+}
+.me {
+  width: 70%;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: 20%;
+}
+.navfont {
+  font: 20px Arial bold, sans-serif;
+  padding-top: 100;
+  padding: 4;
+}
+mark {
+  background-color: rgb(136, 219, 240);
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

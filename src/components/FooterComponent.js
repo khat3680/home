@@ -1,49 +1,42 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Footer(props) {
-    return  (
-        <div className="footer">
-        <div className="container">
-            <div className="row justify-content-center">             
-                <div className="col-4 offset-1 col-sm-2">
-                    <h5 style={{ color: 'white' }}  >Links</h5>
-                    <ul className="list-unstyled">
-                        <li><Link to="/home">Home</Link></li>
-                        <li><Link to="aboutus">About</Link></li>
-                        <li><Link to="/contactus">Contact Me</Link></li>
-                    </ul>
-                </div>
-                {/* <div className="col-7 col-sm-5">
-                    <h5>Our Address</h5>
-                    <address>
-		              121, Clear Water Bay Road<br />
-		              Clear Water Bay, Kowloon<br />
-		              HONG KONG<br />
-		              <i className="fa fa-phone fa-lg"></i>: +852 1234 5678<br />
-		              
-		              <i className="fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net">
-                         confusion@food.net</a>
-                    </address>
-                </div> */}
-                <div className="col-12 col-sm-4 align-self-center">
-                    <div className="text-center">
-                        
-                        <a className="btn btn-social-icon btn-github btn-lg" href="https://github.com/khat3680"><i className="fa fa-github"></i></a>
-                        <a className="btn btn-social-icon btn-linkedin btn-lg" style={{margin:5}} href="http://www.linkedin.com/in/anshul-khatri-certified-full-stack-developer-78b078195"><i className="fa fa-linkedin"></i></a>
-                        <a className="btn btn-social-icon btn-lg" href="mailto:anshulskhatri@gmai.com"><i className="fa fa-envelope-o"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div className="row justify-content-center">             
-                <div className="col-auto">
-                    <p style={{ color: 'white' }} >© Copyright 2021 Anshul Khatri</p>
-                </div>
-            </div>
+  return (
+    <div className="footer">
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-12 offset-3 col-sm-6">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                {" "}
+                <Link to="/home">
+                  <h4>Home</h4>
+                </Link>
+              </li>
+              <li class="list-inline-item">
+                {" "}
+                <Link to="aboutus">
+                  <h4>About</h4>
+                </Link>
+              </li>
+              <li class="list-inline-item">
+                {" "}
+                <Link to="/contactus">
+                  <h4>Contact Me</h4>
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
+        <div className="row justify-content-center">
+          <div className="col-auto">
+            <p>© Copyright 2021 Anshul Khatri</p>
+          </div>
+        </div>
+      </div>
     </div>
-
-    );
+  );
 }
 
 export default Footer;
